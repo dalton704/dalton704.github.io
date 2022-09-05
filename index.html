@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Dalton Scott</title>
+        <link rel="stylesheet" type="text/css" href="Stylesheet/Portfolio.css">
+        <link rel="icon" href="./Images/favicon.ico" type="image/x-icon">
+    </head>
+
+    <!--Body-->
+    <body class="Background">
+
+        <!--NAvbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#Slideshow">SlideShow</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#LinkedIn">LinkedIn</a>
+            <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
+        </div>
+
+        <!--Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="Coding_Video">
+                <source src="./Images/Videos/TItle_Vid.mp4" type="video/mp4">
+                <!--Display message if video fails to run-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--Video text-->
+        <div class="Video-Text">
+            <h1 class="white-text">Dalton Scott's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>Give a man a program, frustrate him for a day.
+                        <br>Teach a man to program, frustrate him for a lifetime.
+                    </q>
+                    <br> -Muhammad Waseem
+                    <br>
+                    <br> My name is Dalton Scott. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                    <br>
+                    <br> Thank you for stopping by and enjoy!
+                </p>
+            </strong>
+        </div>
+
+        <!--Slideshow section added-->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+                    <!--Slide 1 of 5-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="Images/Personal.jpg" alt="Picture of me">
+                        <div class="text">I would love to help you out on your Projects.</div>
+                    </div>
+                    <!--Slide 2 of 5-->
+                    <div class="mySlides fade">
+                        <a href="https://www.google.com/"><img class="Slideshow_Images" src="Images/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JavaScript"></a>
+                        <div class="text">I will be a full-stack developer, <br> trained in:<br>HTML, CSS, JavaScript,</div>
+                    </div>
+                    <!--Slide 3 of 5-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="Images/Python.png" alt="Python Logo">
+                        <div class="text">the popular programming language Python,</div>
+                    </div>
+                    <!--Slide 4 of 5-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="Images/SQL_and_Database(1).jpg" alt="SQL Logo">
+                        <div class="text">back end development, databases and SQL.</div>
+                    </div>
+                    <!--Slide 5 of 5-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="Images/Binary.jpg" alt="Binary">
+                        <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div>
+                    </div>
+                    <!--Previous and Next buttons-->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <!--Slideshow dots-->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+            </div>
+        </div>
+
+        <!--About Section-->
+        <div class="Row" id="About">
+            <!--Left Column-->
+            <div class="Column_2">
+                <img src="Images/Controller.jpg" alt="Xbox Controller">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I studied at "The Tech Academy", to learn computer programming. I enjoy time with my family, and playing video games. I have found a new passion
+                     for computer programming, and the Tech Academy helped me fulfill that passion.
+                    <br>
+                    <br>At <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software Developer Boot Camp, my main course of study was Data Science. 
+                    Along with Data Science I will be proficient in these programming languages: HTML, CSS, JavaScript, and more.
+                    <br>
+                    <br>I have become a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!--GitHub Section-->
+        <div class="Row" id="GitHub">
+            <!--LEFT COLUMN-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/dalton704" target="_blank">dalton704 GitHub</a></p>
+                </p>
+                <br>
+                <p>
+                    During the last two weeks of my study I worked on a live project course that gave me real world experience. I wrote a final review of the project that can be viewed here:
+                    <br>
+                    <p class="center"><a href= "https://github.com/dalton704/JobPlacementDashboard" target="_blank">Project Folder</a></p>
+                </p>
+            </div>
+            <!--Right COlumn-->
+            <div class="Column_2">
+                <a href="https://github.com/dalton704" target="_blank"><img src="Images/GitHub.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+        <!-- Linked In -->
+        <div class="Row" id="LinkedIn">
+            <!--Left Column-->
+            <div class="Column_2">
+                <a href="https://www.linkedin.com/in/dalton-scott-data-science" target="_blank"><img src="Images/linkedin.png" alt="LinkedIn Logo"></a>
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>LinkedIn</h1>
+                <p>
+                    You can view my LinkedIn here: 
+                    <br>
+                    <p class="center"><a href="https://www.linkedin.com/in/dalton-scott-data-science" target="_blank">Dalton's LinkedIn</a></p>
+                    </p>
+                    <br>
+                    <p>You can also veiw my resume here:
+                    <br>
+                    <p class="center"><a href="https://docs.google.com/document/d/1metx5CDKnDXV1ZI0NUCeNjcBmktRJolF3_ncC1K8dJ0/edit?usp=sharing" target="_blank">Resume</a></p>
+                </p>
+            </div>
+        </div>
+
+        <!--Contact form-->
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/f/moqygazb" method="POST" class="form-container">
+                    <h1>Contact</h1>
+                    <label for="name"><b>Name</b></label>
+                        <input type="text" placeholder="Type your name here..." name="name" required>
+                    <label for="phone"><b>Phone</b></label>
+                        <input type="text" placeholder="Type your phone number here..." name="phone">
+                    <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Type your email address here..." name="email" required>
+                    <label for="message"><b>Message</b></label>
+                        <input type="text" placeholder="Type your message here..." name="message">
+                    
+                    <button type="submit" class="btn">SUBMIT</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                </form>
+            </div>
+        </div>
+
+        <!--Footer Section-->
+        <footer>
+            <p>
+                <p class="center">&copy; Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
+            </p>
+        </footer>
+        <script src="JS/JavaScript.js"></script>
+    </body>
+</html>
